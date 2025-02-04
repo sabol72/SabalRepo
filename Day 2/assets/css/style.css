@@ -118,3 +118,18 @@ nav .navlinks li a:hover {
   height: 50px;
   width: 50px;
 }
+
+.dropdown{
+    position: relative;
+}
+.dropdown-list{
+    list-style: none;
+    position:absolute;
+    padding: 10px;
+    display:none;
+    background:rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.151);
+}
+.dropdown:hover .dropdown-list{
+    display:block;
+}

@@ -1,0 +1,9 @@
+After the meeting started the process this task,
+learned how to make css reset, used new css reset from https://github.com/elad2412/the-new-css-reset,(no concrete understanding of the reset that i used, further research needed on that)
+understand how to set proper typography from figma design
+developed container, added background and overlay then other stuff like title buttons etc.
+Took some time to get the vector used in the design but worked it out,
+Biggest headache was getting the responsive right, Since having 0 understanding of the media query, took some sweet and painfull time to get the ressponsive stuff right, and after lot's of trial and error got it working.
+
+Tip for responsive: either make it responsive as you develop or comment out the stuff and do it one at a time. 
+Peace
