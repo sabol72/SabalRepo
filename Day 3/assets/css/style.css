@@ -51,14 +51,11 @@ h6 {
 
 p {
   font-size: 1rem;
-  margin-bottom: 1rem;
-  color: #555; 
 }
 
 /* Links */
 a {
   text-decoration: none; 
-  color: white; 
 }
 
 a:hover {
@@ -71,7 +68,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgba(0, 0, 0, 0.0); 
+  background: rgb(255, 0, 0); 
   padding: 15px 20px;
   color: white;
   position: fixed;
@@ -101,6 +98,9 @@ nav .navlinks li {
 nav .navlinks li:hover {
   transform: scale(1.2); 
 }
+nav .navlinks li:active {
+  transform: scale(0.98); 
+}
 
 nav .navlinks li a {
   color: white; 
@@ -115,21 +115,64 @@ nav .navlinks li a:hover {
 
 /* Logo */
 .sitelogo {
-  height: 50px;
+  height: 17.5px;
   width: 50px;
+  background-size: cover;
 }
 
 .dropdown{
     position: relative;
 }
 .dropdown-list{
-    list-style: none;
-    position:absolute;
-    padding: 10px;
-    display:none;
-    background:rgba(0, 0, 0, 0.8);
-    box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.151);
+  display:none;
+  list-style: none;
+  position:absolute;
+  padding: 10px;
+  background:rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.151);
+  white-space: nowrap;
+  width:auto;
 }
 .dropdown:hover .dropdown-list{
-    display:block;
+  display:block;
+}
+
+/* footer */
+footer{
+  width: 100%;
+  height: auto;
+  background-color: rgb(255, 0, 0);
+  position: fixed;
+  bottom:0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-text{
+  margin: 0.75rem;
+  color: #ffffff;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  gap: 20px;
+}
+.card-items{
+  width:90%;
+  height:auto;
+  background-color: rgb(112, 245, 245);
+  border: #333 solid 3px;
+}
+.float-right{
+  float: right;
+}
+.float-left{
+  float: left;
+
+}
+.float-mid{
+
 }
