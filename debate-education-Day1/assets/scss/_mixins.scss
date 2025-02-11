@@ -9,13 +9,7 @@
     justify-content: $justify;
     align-items: $align;
 }
-.container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    box-sizing: border-box;
-}
+
 @mixin button-style($bg-color: $pink, $text-color: $white,) {
     @include flex-layout(flex, center, center);
     background-color: $bg-color;

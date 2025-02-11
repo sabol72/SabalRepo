@@ -59,17 +59,31 @@
     }
 
 .hero-section{
+    position: relative;
     .hero-section__banner{
-        background-image: url("../uploads/hero-section__banner.png");
-        background-position: center;
-        background-size: cover; 
-        background-repeat: no-repeat;
+        background: linear-gradient(270deg, rgba(22, 23, 72, 0.5) 30.07%, #000000 100%), url("../uploads/hero-section__banner.png")
+        center/cover no-repeat;
         max-width: 1400px;
         width:100%;
         height: 638px;
-        z-index: 1;
+        z-index: 2;
+        position:absolute;
     }
-    #hero-section__slider{
-        z-index:2;
+    .container{
+        @include flex-layout(flex,center,left);
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        box-sizing: border-box;
+        z-index:3;
+        position:relative;
+    .content-wrapper{
+        max-width: 650px;
+        width:100%;
+        height:auto;
+        align-items: center;
+
+    }
     }
 }
