@@ -1,0 +1,75 @@
+@import 'variables';
+@import 'mixins';
+@import 'typography';
+
+
+.top-nav{
+    background-color:$blue;
+    .content-wrapper{
+        @include flex-layout (flex, center, space-between);
+        max-width: 1400px;
+        width:90%;
+        margin: 0 auto;
+        padding: 5px;
+    
+        .top-nav__contacts{
+            @include flex-layout (flex, center, space-between);
+            gap: 20px;
+        
+    
+        }
+        .top-nav__search{
+            @include flex-layout (flex, center, space-between);
+            gap: 10px;
+            border-radius: 40px;
+            background-color: #2A4D91;
+            border: 2px solid #3F5F9C;
+            padding: 7px 15px;
+        }
+    }
+    
+}
+.bottom-nav{
+    background-color:$white;
+    .content-wrapper{
+        @include flex-layout (flex, center, space-between);
+        max-width: 1400px;
+        width:90%;
+        margin: 0 auto;
+        color:$dark-blue;
+        padding: 5px;
+        .site-logo{
+            @include flex-layout (flex, center, center);
+            gap:7px;
+    
+        }
+    
+        .nav-links {
+            @include flex-layout(flex, center, space-between);
+        
+            li {
+                padding: 0 15px;
+            }
+        
+            li:not(:last-child){
+                border-right: 1px dotted $blue;
+            }
+        }
+    }
+    }
+
+.hero-section{
+    .hero-section__banner{
+        background-image: url("../uploads/hero-section__banner.png");
+        background-position: center;
+        background-size: cover; 
+        background-repeat: no-repeat;
+        max-width: 1400px;
+        width:100%;
+        height: 638px;
+        z-index: 1;
+    }
+    #hero-section__slider{
+        z-index:2;
+    }
+}
