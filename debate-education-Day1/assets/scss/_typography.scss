@@ -9,37 +9,70 @@ body {
     font-family: $font-primary;
     font-size: $font-size-body;
     font-weight: $font-weight-regular;
+    line-height: 160%;
     color: $white;
   }
   
   h1 {
-    @include typography($font-size-h1, $font-weight-bold, 1.1);
+    @include typography($font-size-h1, $font-weight-black, 1.1);
+  
+    @include respond-to {
+      @include typography($font-size-h1-mobile, $font-weight-black, 1.1); // Mobile version
+    }
   }
   
   h2 {
-    @include typography($font-size-h2, $font-weight-bold, 1.2);
+    @include typography($font-size-h2, $font-weight-black, 1.2);
+  
+    @include respond-to {
+      @include typography($font-size-h2-mobile, $font-weight-black, 1.2); // Mobile version
+    }
   }
   
   h3 {
-    @include typography($font-size-h3, $font-weight-semibold, 1.1);
+    @include typography($font-size-h3, $font-weight-black, 1.1);
+  
+    @include respond-to {
+      @include typography($font-size-h3-mobile, $font-weight-black, 1.1); // Mobile version
+    }
   }
   
   h4 {
-    @include typography($font-size-h4, $font-weight-semibold, 1.1);
+    @include typography($font-size-h4, $font-weight-black, 1.1);
+  
+    @include respond-to {
+      @include typography($font-size-h4-mobile, $font-weight-black, 1.1); // Mobile version
+    }
   }
   
   h5 {
-    @include typography($font-size-h5, $font-weight-regular, 1);
+    @include typography($font-size-h5, $font-weight-black, 1);
+  
+    @include respond-to {
+      @include typography($font-size-h5-mobile, $font-weight-black, 1); // Mobile version
+    }
   }
   
   h6 {
-    @include typography($font-size-h6, $font-weight-regular, 1);
+    @include typography($font-size-h6, $font-weight-bold, 1);
+  
+    @include respond-to {
+      @include typography($font-size-h6-mobile, $font-weight-bold, 1); // Mobile version
+    }
   }
   
   p {
     @include typography($font-size-body, $font-weight-regular, 1.5);
+  
+    @include respond-to {
+      @include typography($font-size-body-mobile, $font-weight-regular, 1.5); // Mobile version
+    }
   }
   
   small {
     @include typography($font-size-small, $font-weight-light, 1.4);
+  
+    @include respond-to {
+      @include typography($font-size-small-mobile, $font-weight-light, 1.4); // Mobile version
+    }
   }

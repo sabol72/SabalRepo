@@ -1,3 +1,8 @@
+// Responsive Mixin
+@mixin respond-to($size:$breakpoint){
+    @media (max-width:$size){ @content;}
+    
+}
 @mixin typography($size, $weight: $font-weight-regular, $line-height: 1.2) {
     font-size: $size;
     font-weight: $weight;
@@ -32,4 +37,9 @@
         border: 2px solid $bg-color;
         transform: scale(0.98);
     }
+}
+@mixin progress-bar($p-color:$pink){
+    width:70%;
+    height:100%;
+    background-color:$p-color;
 }
