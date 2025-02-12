@@ -11,7 +11,7 @@
 }
 
 @mixin button-style($bg-color: $pink, $text-color: $white,) {
-    @include flex-layout(flex, center, center);
+    @include flex-layout(flex, center, left);
     background-color: $bg-color;
     color: $text-color;
     padding: 12px 24px;

@@ -8,11 +8,22 @@
     "start": "live-server",
     "dev": "npm run sass & npm run start"
   },
-  "keywords": ["project", "scss", "web"],
+  "keywords": [
+    "project",
+    "scss",
+    "web"
+  ],
   "author": "lastdoorS",
   "license": "ISC",
   "devDependencies": {
-    "sass": "^1.68.0",
-    "live-server": "^1.2.1"
+    "live-server": "^1.2.0",
+    "sass": "^1.68.0"
+  },
+  "dependencies": {
+    "braces": "^3.0.3",
+    "chokidar": "^4.0.3",
+    "micromatch": "^4.0.8",
+    "readdirp": "^4.1.1",
+    "swiper": "^11.2.2"
   }
 }
