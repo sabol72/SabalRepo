@@ -231,6 +231,13 @@ body {
 .bottom-nav .content-wrapper .hamburger-menu {
   display: none;
 }
+.bottom-nav .content-wrapper .hamburger-menu .bar {
+  display: block;
+  width: 25px;
+  height: 4px;
+  margin: 5px auto;
+  background-color: #ff1C9D;
+}
 .bottom-nav .content-wrapper .nav-links {
   display: flex;
   justify-content: space-between;
@@ -274,7 +281,7 @@ body {
     white-space: nowrap;
   }
   .bottom-nav .content-wrapper .hamburger-menu {
-    display: flex;
+    display: block;
   }
   .bottom-nav .content-wrapper .nav-links {
     display: none;
