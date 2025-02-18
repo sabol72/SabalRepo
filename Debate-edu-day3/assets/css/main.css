@@ -237,6 +237,7 @@ body {
   height: 4px;
   margin: 5px auto;
   background-color: #ff1C9D;
+  transition: all 0.3s ease-in-out;
 }
 .bottom-nav .content-wrapper .nav-links {
   display: flex;
