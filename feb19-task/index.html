@@ -10,6 +10,19 @@
       href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
     />
     <title>Feb19-task</title>
+    <style>
+      /* .custom-btn {
+        width: 32px;
+        height: 32px;
+        border-radius: 32px;
+        background-color: #ffffff;
+        border: 2px solid #3f5f9c;
+        padding: 7px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      } */
+    </style>
   </head>
   <body>
     <header></header>
@@ -175,7 +188,7 @@
       <section class="related-listings" id="related-listings">
         <div class="related-listings__title"><h2>More like this</h2></div>
         <div class="wrapper">
-          <div class="custom-button-prev">
+          <div class="custom-button-prev custom-btn" id="custom-btn">
             <svg width="32" height="32" class="icon">
               <use href="#icon-left"></use>
             </svg>
@@ -263,7 +276,7 @@
             </div>
           </div>
           <div class="swiper-pagination"></div>
-          <div class="custom-button-next">
+          <div class="custom-button-next custom-btn">
             <svg width="32" height="32" class="icon">
               <use href="#icon-right"></use>
             </svg>
@@ -281,14 +294,14 @@
           <path
             xmlns="http://www.w3.org/2000/svg"
             d="M12.586 27.414l-10-10c-0.781-0.781-0.781-2.047 0-2.828l10-10c0.781-0.781 2.047-0.781 2.828 0s0.781 2.047 0 2.828l-6.586 6.586h19.172c1.105 0 2 0.895 2 2s-0.895 2-2 2h-19.172l6.586 6.586c0.39 0.39 0.586 0.902 0.586 1.414s-0.195 1.024-0.586 1.414c-0.781 0.781-2.047 0.781-2.828 0z"
-            fill="currentColor"
+            fill="#69d2dc"
           />
         </symbol>
         <symbol id="icon-right" viewBox="0 0 32 32">
           <path
             xmlns="http://www.w3.org/2000/svg"
             d="M19.414 27.414l10-10c0.781-0.781 0.781-2.047 0-2.828l-10-10c-0.781-0.781-2.047-0.781-2.828 0s-0.781 2.047 0 2.828l6.586 6.586h-19.172c-1.105 0-2 0.895-2 2s0.895 2 2 2h19.172l-6.586 6.586c-0.39 0.39-0.586 0.902-0.586 1.414s0.195 1.024 0.586 1.414c0.781 0.781 2.047 0.781 2.828 0z"
-            fill="currentColor"
+            fill="#69d2dc"
           />
         </symbol>
       </defs>
