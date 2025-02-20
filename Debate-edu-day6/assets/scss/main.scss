@@ -505,16 +505,107 @@ body {
 
 // Coaching Team
 .coaching-team {
+  max-width: 1400px;
   background-color: $pink;
   .container {
     justify-content: left;
     flex-direction: column;
     .coaching-team__top {
-      @include flex-layout(flex, center, space-between);
-      max-height: 142px;
+      @include flex-layout(flex, space-between, flex-end); // Align to bottom
+      max-width: 1200px;
+      // margin: 15px;
+      width: 100%;
       .coaching-team__label {
-        max-width: 629px;
+        max-width: 630px;
         width: 100%;
+        @include flex-layout(flex, flex-start, flex-start);
+        flex-direction: column;
+
+        &__text {
+          @include typography(18px, $font-weight-medium, 1.2);
+          letter-spacing: 0;
+          &__link {
+            @include typography(18px, $font-weight-bold, 1.2);
+            letter-spacing: 0;
+          }
+        }
+      }
+
+      .coaching-team__navigation {
+        @include flex-layout(flex, flex-end, flex-end);
+        gap: 10px;
+        width: 90%;
+
+        .coaching-team__navigation__btn-wrapper {
+          display: flex;
+          gap: 10px;
+        }
+
+        .custom-btn {
+          width: 40px;
+          height: 40px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: #ff1c9d;
+          border-radius: 50%;
+          cursor: pointer;
+
+          &:hover {
+            background-color: #e60087;
+          }
+        }
+      }
+    }
+    .coaching-team__bottom {
+      max-width: 1170px;
+      width: 100%;
+      .swiper {
+        max-width: 1170px;
+        width: 100%;
+        margin: 15px;
+        // padding: 15px;
+        height: 385px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .swiper-wrapper {
+          .swiper-slide {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            text-align: center;
+            gap: 10px;
+            img {
+              border-radius: 15px;
+              width: 282px;
+              height: 320px;
+              object-fit: cover;
+            }
+            .coaching-team__slider__item__title {
+              @include typography(20px, $font-weight-black, 1);
+
+              text-align: left;
+            }
+            .coaching-team__slider__item__label {
+              @include typography(14px, $font-weight-medium, 1.3);
+              text-align: left;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@include respond-to {
+  .coaching-team {
+    .coaching-team__top {
+      .coaching-team__navigation {
+        display: none;
+        .coaching-team__navigation__btn-wrapper {
+          display: none;
+        }
       }
     }
   }

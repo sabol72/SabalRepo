@@ -10,60 +10,108 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+      .custom-btn {
+        width: 32px;
+        height: 32px;
+        border-radius: 32px;
+        background-color: #ffffff;
+        border: 2px solid #69d2dc;
+        padding: 7px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      @media (max-width: 768px) {
+        .custom-btn {
+          display: none;
+        }
+      }
+    </style>
   </head>
   <body>
     <section class="coaching-team">
       <div class="container">
         <div class="coaching-team__top">
-          <div class="coaching-team__label">
+          <div class="coaching-team__label top__child">
             <div class="coaching-team__title">
               <h2>Meet our Coaches leaders &amp; Innovators</h2>
             </div>
             <div class="coaching-team__text">
-               Excellence breeds excellence or,
+              Excellence breeds excellence or,
               <a href="#" class="coaching-team__text__link"
                 >Join our championship coaching team.</a
               >
             </div>
           </div>
-          <div class="coaching-team__navigation">buttonss</div>
-        </div>
-        <div class="coaching-team__bottom">
-          <div class="coaching-team__slider">
-            <div class="coaching-team__slider__item">
-              <img src="" alt="coach1" />
-              <div class="coaching-team__slider__item__title">Mai</div>
-              <div class="coaching-team__slider__item__label">
-                hello i am mai guy nice to meet you pal
+          <div class="coaching-team__navigation">
+            <div class="coaching-team__navigation__btn-wrapper">
+              <div class="custom-button-prev custom-btn">
+                <svg width="32" height="32" class="icon">
+                  <use href="#icon-left"></use>
+                </svg>
               </div>
-            </div>
-            <div class="coaching-team__slider__item">
-              <img src="" alt="coach1" />
-              <div class="coaching-team__slider__item__title">Mai</div>
-              <div class="coaching-team__slider__item__label">
-                hello i am mai guy nice to meet you pal
-              </div>
-            </div>
-            <div class="coaching-team__slider__item">
-              <img src="" alt="coach1" />
-              <div class="coaching-team__slider__item__title">Mai</div>
-              <div class="coaching-team__slider__item__label">
-                hello i am mai guy nice to meet you pal
-              </div>
-            </div>
-            <div class="coaching-team__slider__item">
-              <img src="" alt="coach1" />
-              <div class="coaching-team__slider__item__title">Mai</div>
-              <div class="coaching-team__slider__item__label">
-                hello i am mai guy nice to meet you pal
+              <div class="custom-button-next custom-btn">
+                <svg width="32" height="32" class="icon">
+                  <use href="#icon-right"></use>
+                </svg>
               </div>
             </div>
           </div>
         </div>
+        <div class="coaching-team__bottom">
+          <div class="swiper coaching-team__slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide coaching-team__slider__item">
+                <img
+                  src="assets/uploads/architecture-5999913_1280.jpg"
+                  alt="coach1"
+                />
+                <div class="coaching-team__slider__item__title">Mai</div>
+                <div class="coaching-team__slider__item__label">
+                  hello i am mai guy nice to meet you pal
+                </div>
+              </div>
+              <div class="swiper-slide coaching-team__slider__item">
+                <img src="assets/uploads/house-2483336_640.jpg" alt="coach1" />
+                <div class="coaching-team__slider__item__title">Mai</div>
+                <div class="coaching-team__slider__item__label">
+                  hello i am mai guy nice to meet you pal
+                </div>
+              </div>
+              <div class="swiper-slide coaching-team__slider__item">
+                <img
+                  src="assets/uploads/residence-2219972_1280.jpg"
+                  alt="coach1"
+                />
+                <div class="coaching-team__slider__item__title">Mai</div>
+                <div class="coaching-team__slider__item__label">
+                  hello i am mai guy nice to meet you pal
+                </div>
+              </div>
+              <div class="swiper-slide coaching-team__slider__item">
+                <img src="assets/uploads/vacation-image.jpg" alt="coach1" />
+                <div class="coaching-team__slider__item__title">Mai</div>
+                <div class="coaching-team__slider__item__label">
+                  hello i am mai guy nice to meet you pal
+                </div>
+              </div>
+              <div class="swiper-slide coaching-team__slider__item">
+                <img
+                  src="assets/uploads/architecture-5999913_1280.jpg"
+                  alt="coach1"
+                />
+                <div class="coaching-team__slider__item__title">Mai</div>
+                <div class="coaching-team__slider__item__label">
+                  hello i am mai guy nice to meet you pal
+                </div>
+              </div>
+            </div>
+            <!-- <div class="swiper-pagination"></div> -->
+          </div>
+        </div>
       </div>
     </section>
-
-    <script src="assets/js/script.js"></script>
     <svg style="display: none">
       <defs>
         <symbol id="icon__personal-growth">
@@ -87,7 +135,24 @@
             fill="#FF1C9D"
           />
         </symbol>
+        <symbol id="icon-left" viewBox="0 0 32 32">
+          <path
+            xmlns="http://www.w3.org/2000/svg"
+            d="M12.586 27.414l-10-10c-0.781-0.781-0.781-2.047 0-2.828l10-10c0.781-0.781 2.047-0.781 2.828 0s0.781 2.047 0 2.828l-6.586 6.586h19.172c1.105 0 2 0.895 2 2s-0.895 2-2 2h-19.172l6.586 6.586c0.39 0.39 0.586 0.902 0.586 1.414s-0.195 1.024-0.586 1.414c-0.781 0.781-2.047 0.781-2.828 0z"
+            fill="#69d2dc"
+          />
+        </symbol>
+        <symbol id="icon-right" viewBox="0 0 32 32">
+          <path
+            xmlns="http://www.w3.org/2000/svg"
+            d="M19.414 27.414l10-10c0.781-0.781 0.781-2.047 0-2.828l-10-10c-0.781-0.781-2.047-0.781-2.828 0s-0.781 2.047 0 2.828l6.586 6.586h-19.172c-1.105 0-2 0.895-2 2s0.895 2 2 2h19.172l-6.586 6.586c-0.39 0.39-0.586 0.902-0.586 1.414s0.195 1.024 0.586 1.414c0.781 0.781 2.047 0.781 2.828 0z"
+            fill="#69d2dc"
+          />
+        </symbol>
       </defs>
     </svg>
+
+    <script src="assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </body>
 </html>

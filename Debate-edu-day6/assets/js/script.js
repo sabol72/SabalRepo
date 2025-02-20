@@ -1,4 +1,35 @@
 document.addEventListener("DOMContentLoaded", function () {
+  const swiper = new Swiper(".swiper", {
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    autoplay: {
+      delay: 3000,
+    },
+    navigation: {
+      nextEl: ".custom-button-next",
+      prevEl: ".custom-button-prev",
+    },
+    slidesPerView: 4,
+    spaceBetween: 10,
+    breakpoints: {
+      1024: {
+        slidesPerView: 4,
+      },
+      768: {
+        slidesPerView: 3,
+      },
+      480: {
+        slidesPerView: 2,
+      },
+      0: {
+        slidesPerView: 1,
+      },
+    },
+  });
+
   const menu = document.querySelector(".nav-menu");
   const hamburger = document.querySelector(".hamburger-menu");
   const menuLinks = document.querySelectorAll(".nav-links-item");
