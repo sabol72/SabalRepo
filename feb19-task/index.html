@@ -5,12 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
     <title>Feb19-task</title>
   </head>
   <body>
     <header></header>
     <main>
-      <section class="project">
+      <section class="project" id="project">
         <div class="container">
           <h1 class="project__title">
             <em>Camp Margaritaville RV & Cabana Cabins Auburndale</em>
@@ -59,7 +63,7 @@
           </div>
         </div>
       </section>
-      <section class="carousel">
+      <section class="carousel" id="carousel">
         <div class="carousel__title"><h2>Section Title 2</h2></div>
         <div class="container">
           <div class="carousel__big">
@@ -72,7 +76,7 @@
             </div>
             <div class="carousel__big__item">
               <img
-                src="assets/uploads/vacation-image-square.jpg"
+                src="assets/uploads/architecture-5999913_1280.jpg"
                 alt=""
                 class="carousel-image"
               />
@@ -81,21 +85,21 @@
           <div class="carousel__small">
             <div class="carousel__small__item">
               <img
-                src="assets/uploads/vacation-image-square.jpg"
+                src="assets/uploads/house-2483336_640.jpg"
                 alt=""
                 class="carousel-image"
               />
             </div>
             <div class="carousel__small__item">
               <img
-                src="assets/uploads/vacation-image-square.jpg"
+                src="assets/uploads/residence-2219972_1280.jpg"
                 alt=""
                 class="carousel-image"
               />
             </div>
             <div class="carousel__small__item">
               <img
-                src="assets/uploads/vacation-image-square.jpg"
+                src="assets/uploads/vacation-image.jpg"
                 alt=""
                 class="carousel-image"
               />
@@ -114,9 +118,180 @@
         <span class="close" id="close-modal">&times</span>
         <img class="modal-content" id="modal-image" src="" alt="" />
       </div>
+      <!-- <section class="related-listings">
+        <div class="related-listings__title"><h2>More like this</h2></div>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="assets/uploads/architecture-5999913_1280.jpg"
+                alt="Self-Storage - Auburndale"
+              />
+              <h3>Self-Storage - Auburndale</h3>
+              <p>Self-Storage</p>
+            </div>
+
+            <div class="swiper-slide">
+              <img
+                src="assets/uploads/house-2483336_640.jpg"
+                alt="Camp Margaritaville RV & Cabanas"
+              />
+              <h3>Camp Margaritaville RV & Cabanas</h3>
+              <p>Hospitality</p>
+            </div>
+
+            <div class="swiper-slide">
+              <img
+                src="assets/uploads/residence-2219972_1280.jpg"
+                alt="Schalamar Creek Golf & Country Club"
+              />
+              <h3>Schalamar Creek Golf & Country Club</h3>
+              <p>55+ Lifestyle Community</p>
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="assets/uploads/residence-2219972_1280.jpg"
+                alt="Schalamar Creek Golf & Country Club"
+              />
+              <h3>Schalamar Creek Golf & Country Club</h3>
+              <p>55+ Lifestyle Community</p>
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="assets/uploads/residence-2219972_1280.jpg"
+                alt="Schalamar Creek Golf & Country Club"
+              />
+              <h3>Schalamar Creek Golf & Country Club</h3>
+              <p>55+ Lifestyle Community</p>
+            </div>
+
+            Navigation Arrows
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </section>-->
+
+      <section class="related-listings" id="related-listings">
+        <div class="related-listings__title"><h2>More like this</h2></div>
+        <div class="wrapper">
+          <div class="custom-button-prev">
+            <svg width="32" height="32" class="icon">
+              <use href="#icon-left"></use>
+            </svg>
+          </div>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="swiper-slide__image">
+                  <a href="#">
+                    <img
+                      src="assets/uploads/architecture-5999913_1280.jpg"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="swiper-slide__title">
+                  <a href="#">Self-Storage - Auburndale</a>
+                </div>
+                <div class="swiper-slide__text">
+                  <a href="#">Self-Storage</a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="swiper-slide__image">
+                  <a href="#">
+                    <img src="assets/uploads/house-2483336_640.jpg" alt="" />
+                  </a>
+                </div>
+                <div class="swiper-slide__title">
+                  <a href="#">Camp Margaritaville & Cabanas</a>
+                </div>
+                <div class="swiper-slide__text">
+                  <a href="#">Hospitality</a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="swiper-slide__image">
+                  <a href="#">
+                    <img
+                      src="assets/uploads/residence-2219972_1280.jpg"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="swiper-slide__title">
+                  <a href="#">Schalamar Creek Golf & Country Club</a>
+                </div>
+                <div class="swiper-slide__text">
+                  <a href="#">55+ Lifestyle Community</a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="swiper-slide__image">
+                  <a href="#">
+                    <img src="assets/uploads/vacation-image.jpg" alt="" />
+                  </a>
+                </div>
+                <div class="swiper-slide__title">
+                  <a href="#">Beach Valenciaga</a>
+                </div>
+                <div class="swiper-slide__text">
+                  <a href="#">Orange Glassed Beach</a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="swiper-slide__image">
+                  <a href="#">
+                    <img
+                      src="assets/uploads/vacation-image-square.jpg"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="swiper-slide__title">
+                  <a href="#">Blue Margarita</a>
+                </div>
+                <div class="swiper-slide__text">
+                  <a href="#">Water Blue & Girl Margarita</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="custom-button-next">
+            <svg width="32" height="32" class="icon">
+              <use href="#icon-right"></use>
+            </svg>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer></footer>
     <script src="assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <svg style="display: none">
+      <defs>
+        <symbol id="icon-left" viewBox="0 0 32 32">
+          <path
+            xmlns="http://www.w3.org/2000/svg"
+            d="M12.586 27.414l-10-10c-0.781-0.781-0.781-2.047 0-2.828l10-10c0.781-0.781 2.047-0.781 2.828 0s0.781 2.047 0 2.828l-6.586 6.586h19.172c1.105 0 2 0.895 2 2s-0.895 2-2 2h-19.172l6.586 6.586c0.39 0.39 0.586 0.902 0.586 1.414s-0.195 1.024-0.586 1.414c-0.781 0.781-2.047 0.781-2.828 0z"
+            fill="currentColor"
+          />
+        </symbol>
+        <symbol id="icon-right" viewBox="0 0 32 32">
+          <path
+            xmlns="http://www.w3.org/2000/svg"
+            d="M19.414 27.414l10-10c0.781-0.781 0.781-2.047 0-2.828l-10-10c-0.781-0.781-2.047-0.781-2.828 0s-0.781 2.047 0 2.828l6.586 6.586h-19.172c-1.105 0-2 0.895-2 2s0.895 2 2 2h19.172l-6.586 6.586c-0.39 0.39-0.586 0.902-0.586 1.414s0.195 1.024 0.586 1.414c0.781 0.781 2.047 0.781 2.828 0z"
+            fill="currentColor"
+          />
+        </symbol>
+      </defs>
+    </svg>
   </body>
 </html>
