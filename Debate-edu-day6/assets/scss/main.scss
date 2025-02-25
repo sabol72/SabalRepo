@@ -525,8 +525,10 @@ body {
           @include typography(18px, $font-weight-medium, 1.2);
           letter-spacing: 0;
           &__link {
-            @include typography(18px, $font-weight-bold, 1.2);
+            @include typography(25px, $font-weight-bold, 1.2);
             letter-spacing: 0;
+            color: $pink;
+            text-decoration: underline;
           }
         }
       }

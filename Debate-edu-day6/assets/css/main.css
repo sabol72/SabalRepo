@@ -681,10 +681,12 @@ body {
   letter-spacing: 0;
 }
 .coaching-team .container .coaching-team__top .coaching-team__label__text__link {
-  font-size: 18px;
+  font-size: 25px;
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: 0;
+  color: #ff1c9d;
+  text-decoration: underline;
 }
 .coaching-team .container .coaching-team__top .coaching-team__navigation {
   display: flex;
