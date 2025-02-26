@@ -16,7 +16,8 @@
         <h1>Lastdoor Survery Form</h1>
         <p>Share Your Thoughts and Experiecne on Websites!</p>
         <section class="form">
-          <form action="form-sub.html" method="post">
+          <h2>Web Technologies and Their Rise</h2>
+          <form action="form-submission.html" method="post">
             <fieldset>
               <legend>Let the world know about yourself!</legend>
               <div class="form-question">
@@ -415,15 +416,16 @@
               </div>
               <div class="form-question">
                 <p>Rate your Interest in web development</p>
-                <label for="interest"
+                <label for="interest-slider"
                   ><input
                     type="range"
-                    id="interest"
-                    name="interest"
+                    id="interest-slider"
+                    name="interest-slider"
                     min="1"
                     max="10"
                     value="5"
                   />
+                  <p>Your Interest: <span id="sliderValue">5</span>/10</p>
                 </label>
               </div>
             </fieldset>
@@ -440,10 +442,7 @@
                   ></textarea>
                 </label>
               </div>
-            </fieldset>
-            <fieldset>
-              <legend>Send your thoughts</legend>
-              <div class="form-question">
+              <div class="form-question terms">
                 <label for="terms">
                   <input type="checkbox" id="terms" name="terms" required />
                   I accept the <a href="#">terms and conditions</a>
@@ -457,5 +456,6 @@
         </section>
       </div>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>

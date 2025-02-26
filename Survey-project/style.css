@@ -1,0 +1,192 @@
+/* Universal Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+/* Basic reset for body, headings, and paragraphs */
+body {
+  background-color: #fff;
+  color: #000;
+  font-size: 16px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* Reset for lists */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Reset for links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Reset for form elements */
+input,
+select,
+textarea,
+button {
+  font: inherit;
+  border: none;
+  background: transparent;
+  outline: none;
+}
+
+button,
+input[type="button"],
+input[type="submit"] {
+  cursor: pointer;
+}
+
+/* Table reset */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+th,
+td {
+  text-align: left;
+}
+
+/* Reset for images and media */
+img,
+picture,
+video {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+/* Reset for the figure element */
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+blockquote {
+  margin: 0;
+  padding: 0;
+  quotes: none;
+}
+
+/* Reset for svg */
+svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Reset for input and text elements */
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/* Reset for the form elements */
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Reset for the fieldset */
+legend {
+  display: block;
+  padding: 0;
+  margin: 0;
+  font-weight: normal;
+}
+
+/* Prevent images from having any unwanted bottom space (like inline elements) */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Remove unwanted background, borders or extra spacing from form inputs */
+input,
+button,
+select,
+textarea {
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+
+/* Start of Cascading */
+.page-title {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 1rem;
+  text-align: center;
+  border: 2px solid red;
+}
+.page-title p {
+  width: 50%;
+}
+#ultimate-form {
+  max-width: 1400px;
+  padding: 40px 30px;
+  width: 100%;
+  height: auto;
+  border: 2px solid blue;
+}
+.container {
+  max-width: 1200px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  border: 2px solid red;
+}
+fieldset {
+  border: 2px solid gold;
+  border-radius: 1rem;
+  width: 100%;
+  padding: 1rem;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.radio-group,
+.checkbox-group {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.checkbox-group input[type="checkbox-group"] {
+  display: inline-block;
+  margin-right: 10px;
+}
