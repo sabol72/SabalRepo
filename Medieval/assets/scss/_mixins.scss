@@ -1,0 +1,39 @@
+// Responsive Mixin
+@mixin respond-to($size: $breakpoint) {
+  @media (max-width: $size) {
+    @content;
+  }
+}
+@mixin typography($size, $weight: $font-weight-regular, $line-height: 1.2) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $line-height;
+}
+@mixin display(
+  $type,
+  $align: null,
+  $justify: null,
+  $direction: null,
+  $wrap: null
+) {
+  display: $type;
+
+  @if $align {
+    align-items: $align;
+  }
+
+  @if $justify {
+    justify-content: $justify;
+  }
+
+  @if $direction {
+    flex-direction: $direction;
+  }
+
+  @if $wrap {
+    flex-wrap: $wrap;
+  }
+}
+@mixin transition($property: all, $duration: 0.3s, $ease: ease-in-out) {
+  transition: $property $duration $ease;
+}

@@ -1,0 +1,28 @@
+{
+  "name": "medival",
+  "version": "1.0.0",
+  "description": "for fun",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch assets/scss/main.scss:assets/css/main.css",
+    "start": "live-server",
+    "dev": "npm run sass & npm run start"
+  },
+  "keywords": [
+    "project",
+    "scss",
+    "web"
+  ],
+  "author": "lastdoorS",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.0"
+  },
+  "dependencies": {
+    "braces": "^3.0.3",
+    "chokidar": "^4.0.3",
+    "micromatch": "^4.0.8",
+    "readdirp": "^4.1.1",
+    "swiper": "^11.2.2"
+  }
+}

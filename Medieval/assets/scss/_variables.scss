@@ -1,0 +1,41 @@
+// Responsive
+$breakpoint: 768px;
+
+// Colors
+$primary-color: #bd8d4c;
+$secondary-color: #0e0d12;
+$accent-color: #f2e0c8;
+$dark-color: #070301;
+$light-color: #e8d3b6;
+$dark-text: #17293e;
+$light-text: #4c5175;
+
+// fonts
+$font-primary: "Inter", sans-serif;
+
+// Font Sizes
+$font-size-h1: 70px;
+$font-size-h2: 46px;
+$font-size-h3: 40px;
+$font-size-h4: 32px;
+$font-size-h5: 20px;
+$font-size-h6: 16px;
+$font-size-body: 18px;
+$font-size-small: 14px;
+
+$font-size-h1-mobile: 48px;
+$font-size-h2-mobile: 36px;
+$font-size-h3-mobile: 28px;
+$font-size-h4-mobile: 24px;
+$font-size-h5-mobile: 18px;
+$font-size-h6-mobile: 14px;
+$font-size-body-mobile: 14px;
+$font-size-small-mobile: 12px;
+
+// Font Weights
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-black: 900;
