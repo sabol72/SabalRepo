@@ -19,7 +19,7 @@
       <form action="" method="post">
         <div class="container">
           <fieldset>
-            <legend>Personal Information</legend>
+            <!-- <legend>Personal Information</legend> -->
 
             <!-- Full Name -->
             <div class="form-group">
@@ -54,35 +54,38 @@
             <!-- Gender -->
             <div class="form-group">
               <p>Gender:</p>
-              <div class="radio-group">
-                <br />
-                <label for="male">Male</label>
+              <label for="male">
                 <input
                   type="radio"
                   id="male"
                   name="gender"
                   value="male"
+                  class="inline-group"
                   required
-                />
+                />Male</label
+              >
 
-                <label for="female">Female</label>
+              <label for="female">
                 <input
                   type="radio"
                   id="female"
                   name="gender"
                   value="female"
+                  class="inline-group"
                   required
-                />
+                />Female</label
+              >
 
-                <label for="other">Other / Prefer not to say</label>
+              <label for="other">
                 <input
                   type="radio"
                   id="other"
                   name="gender"
                   value="other"
+                  class="inline-group"
                   required
-                />
-              </div>
+                />Other / Prefer not to say</label
+              >
             </div>
             <!-- Country -->
             <div class="form-group">
@@ -102,67 +105,78 @@
                 type="text"
                 id="profession"
                 name="profession"
-                value="profession"
+                placeholder="What do you do for work?.."
                 required
               />
             </div>
           </fieldset>
 
           <fieldset>
-            <legend>Daily Habits & Routine</legend>
+            <!-- <legend>Daily Habits & Routine</legend> -->
             <div class="form-group">
               <p>How do you usually start your morning?</p>
-              <br />
-              <div class="radio-group">
-                <label for="exercise">Exercise</label>
+              <label for="exercise">
                 <input
                   type="radio"
                   name="morning-routine"
                   id="exercise"
                   value="exercise"
+                  class="inline-group"
                   required
-                />
-                <label for="meditation">Meditation</label>
+                />Exercise</label
+              >
+              <label for="meditation">
                 <input
                   type="radio"
                   name="morning-routine"
                   id="meditation"
                   value="meditation"
+                  class="inline-group"
                   required
-                />
-                <label for="reading">Reading</label>
+                />Meditation</label
+              >
+              <label for="reading">
                 <input
                   type="radio"
                   name="morning-routine"
                   id="reading"
                   value="reading"
+                  class="inline-group"
                   required
-                />
-                <label for="social-media">Social Media Scrolling</label>
-                <input
+                />Reading</label
+              >
+              <label for="social-media"
+                ><input
                   type="radio"
                   name="morning-routine"
                   id="social-media"
                   value="social-media"
+                  class="inline-group"
                   required
-                />
-                <label for="straight-to-work">Straight to Work</label>
-                <input
+                />Social Media Scrolling</label
+              >
+
+              <label for="straight-to-work"
+                ><input
                   type="radio"
                   name="morning-routine"
                   id="straight-to-work"
                   value="straight-to-work"
+                  class="inline-group"
                   required
-                />
-                <label for="others">Others</label>
+                />Straight to Work</label
+              >
+
+              <label for="others">
                 <input
                   type="radio"
                   name="morning-routine"
                   id="others"
                   value="others"
+                  class="inline-group"
                   required
-                />
-              </div>
+                />Others</label
+              >
             </div>
             <div class="form-group">
               <label for="sleep-hours"
@@ -172,87 +186,97 @@
             </div>
             <div class="form-group">
               <p>Do you follow a structured daily routine?</p>
-              <br />
-              <div class="radio-group">
-                <label for="yes-very-strict">Yes, Very Strict</label>
+              <label for="yes-very-strict">
                 <input
                   type="radio"
                   name="daily-routine"
                   id="yes-very-strict"
                   value="yes-very-strict"
+                  class="inline-group"
                   required
-                />
-                <label for="somewhat-flexible">Somewhat, but Flexible</label>
+                />Yes, Very Strict</label
+              >
+              <label for="somewhat-flexible">
                 <input
                   type="radio"
                   name="daily-routine"
                   id="somewhat-flexible"
                   value="somewhat-flexible"
+                  class="inline-group"
                   required
-                />
-                <label for="no-go-with-flow">No, I go with the flow</label>
+                />Somewhat, but Flexible</label
+              >
+              <label for="no-go-with-flow">
                 <input
                   type="radio"
                   name="daily-routine"
                   id="no-go-with-flow"
                   value="no-go-with-flow"
+                  class="inline-group"
                   required
-                />
-              </div>
+                />No, I go with the flow</label
+              >
             </div>
           </fieldset>
 
           <fieldset>
-            <legend>Productivity and Goal Setting</legend>
+            <!-- <legend>Productivity and Goal Setting</legend> -->
             <div class="form-group">
               <p>What is your biggest productivity challenge?</p>
-              <br />
-              <div class="checkbox-group">
-                <label for="burnout">Burnout</label>
+              <label for="burnout">
                 <input
                   type="checkbox"
                   name="productivity-challenge"
                   id="burnout"
                   value="burnout"
+                  class="inline-group"
                   required
-                />
+                />Burnout</label
+              >
 
-                <label for="distractions">Distractions</label>
+              <label for="distractions">
                 <input
                   type="checkbox"
                   name="productivity-challenge"
                   id="distractions"
                   value="distractions"
+                  class="inline-group"
                   required
-                />
+                />Distractions</label
+              >
 
-                <label for="poor-time-management">Poor Time Management</label>
+              <label for="poor-time-management">
                 <input
                   type="checkbox"
                   name="productivity-challenge"
                   id="poor-time-management"
                   value="poor-time-management"
+                  class="inline-group"
                   required
-                />
+                />Poor Time Management</label
+              >
 
-                <label for="lack-of-motivation">Lack of Motivation</label>
+              <label for="lack-of-motivation">
                 <input
                   type="checkbox"
                   name="productivity-challenge"
                   id="lack-of-motivation"
                   value="lack-of-motivation"
+                  class="inline-group"
                   required
-                />
+                />Lack of Motivation</label
+              >
 
-                <label for="procrastination">Procrastination</label>
+              <label for="procrastination">
                 <input
                   type="checkbox"
                   name="productivity-challenge"
                   id="procrastination"
                   value="procrastination"
+                  class="inline-group"
                   required
-                />
-              </div>
+                />Procrastination</label
+              >
             </div>
             <div class="form-group">
               <p>What time of the day are you most productive?</p>
@@ -267,7 +291,7 @@
           </fieldset>
 
           <fieldset>
-            <legend>Learning & Self Improvement</legend>
+            <!-- <legend>Learning & Self Improvement</legend> -->
             <div class="form-group">
               <label for="books-read"
                 >How many books do you read per year?</label
@@ -282,8 +306,11 @@
               />
             </div>
             <div class="form-group">
-              <label for="preferred-learning">Preferred way of learning?</label>
+              <label for="preferred-learning"
+                >Your Prefered Way of Learning?</label
+              >
               <select id="preferred-learning" name="preferred-learning">
+                <option value="">Select your Prefered Way</option>
                 <option value="Books">Books</option>
                 <option value="Online Courses">Online Courses</option>
                 <option value="Podcasts">Podcasts</option>
@@ -293,53 +320,56 @@
             </div>
             <div class="form-group">
               <p>Which self-improvement areas interest you the most?</p>
-              <br />
-              <div class="checkbox-group">
-                <label for="mindset-mental-health"
-                  >Mindset & Mental Health</label
-                >
+              <label for="mindset-mental-health">
                 <input
                   type="checkbox"
                   id="mindset-mental-health"
                   name="self-improvement"
                   value="mindset-mental-health"
-                />
-                <label for="financial-growth">Financial Growth</label>
+                  class="inline-group"
+                />Mindset & Mental Health</label
+              >
+              <label for="financial-growth">
                 <input
                   type="checkbox"
                   id="financial-growth"
                   name="self-improvement"
                   value="financial-growth"
-                />
-                <label for="productivity-time-management"
-                  >Productivity & Time Management</label
-                >
+                  class="inline-group"
+                />Financial Growth</label
+              >
+              <label for="productivity-time-management">
                 <input
                   type="checkbox"
                   id="productivity-time-management"
                   name="self-improvement"
                   value="productivity-time-management"
-                />
-                <label for="communication-skills">Communication Skills</label>
+                  class="inline-group"
+                />Productivity & Time Management</label
+              >
+              <label for="communication-skills">
                 <input
                   type="checkbox"
                   id="communication-skills"
                   name="self-improvement"
                   value="communication-skills"
-                />
-                <label for="fitness-health">Fitness & Health</label>
+                  class="inline-group"
+                />Communication Skills</label
+              >
+              <label for="fitness-health">
                 <input
                   type="checkbox"
                   id="fitness-health"
                   name="self-improvement"
                   value="fitness-health"
-                />
-              </div>
+                  class="inline-group"
+                />Fitness & Health</label
+              >
             </div>
           </fieldset>
 
           <fieldset>
-            <legend>Technology and Digital Health</legend>
+            <!-- <legend>Technology and Digital Health</legend> -->
             <div class="form-group">
               <label for="phone-hours"
                 >How many hours do you spend on your phone daily?</label
@@ -355,33 +385,36 @@
             </div>
             <div class="form-group">
               <p>Do you use productivity apps?</p>
-              <br />
-              <div class="radio-group">
-                <label for="yes-regularly">Yes, regularly</label>
+              <label for="yes-regularly">
                 <input
                   type="radio"
                   name="productivity-apps"
                   id="yes-regularly"
                   value="yes-regularly"
+                  class="inline-group"
                   required
-                />
-                <label for="occasionally">Occasionally</label>
+                />Yes, regularly</label
+              >
+              <label for="occasionally">
                 <input
                   type="radio"
                   name="productivity-apps"
                   id="occasionally"
                   value="occasionally"
+                  class="inline-group"
                   required
-                />
-                <label for="no-not-interested">No, not interested</label>
+                />Occasionally</label
+              >
+              <label for="no-not-interested">
                 <input
                   type="radio"
                   name="productivity-apps"
                   id="no-not-interested"
                   value="no-not-interested"
+                  class="inline-group"
                   required
-                />
-              </div>
+                />No, not interested</label
+              >
             </div>
             <div class="form-group">
               <label for="favorite-tools"
@@ -398,7 +431,7 @@
           </fieldset>
 
           <fieldset>
-            <legend>Final Thoughts</legend>
+            <!-- <legend>Final Thoughts</legend> -->
             <div class="form-group">
               <label for="new-skill"
                 >If you could master one new skill in the next 6 months, what
@@ -407,7 +440,9 @@
               <input type="text" id="new-skill" name="new-skill" required />
             </div>
             <div class="form-group">
-              <label for="life-goals">What are your top 3 life goals?</label>
+              <label for="life-goals"
+                >What is your biggest life goal right now?</label
+              >
               <input type="text" id="life-goals" name="life-goals" required />
             </div>
             <div class="form-group">
@@ -423,8 +458,18 @@
             </div>
           </fieldset>
 
-          <div class="form-group">
-            <button type="submit">Submit</button>
+          <div class="form-group center-g">
+            <label for="terms"
+              ><input
+                type="checkbox"
+                name="terms"
+                id="terms"
+                value="terms"
+                class="inline-group"
+              />
+              I agree to the <a href="#">terms and conditions.</a></label
+            >
+            <button type="submit" class="button">Submit</button>
           </div>
         </div>
       </form>
