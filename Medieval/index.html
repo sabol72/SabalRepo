@@ -8,6 +8,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 
     <title>Medival Weapon Shop</title>
   </head>
@@ -34,9 +38,7 @@
               <a href="#" class="navlinks">FEATURED</a>
             </li>
             <li class="nav-menu__item mobile_only">
-              <a href="#" class="navlinks">
-                <button class="btn" id="nav-btn">Become a Member!</button>
-              </a>
+              <a href="#" class="btn">Become a Member!</a>
             </li>
           </ul>
           <button class="hamburger-menu">
@@ -44,21 +46,96 @@
             <span class="ham-bar"></span>
             <span class="ham-bar"></span>
           </button>
-          <button class="btn" id="nav-btn">Become a Member!</button>
+          <a href="#" class="btn" id="nav-btn">Become a Member!</a>
         </div>
       </nav>
     </header>
     <main>
       <!-- Hero Section -->
-      <section class="hero-section">
-        <div class="hero-section__overlay">
-          <h1>Forge Your Legacy</h1>
-          <p>
-            Arm yourself with legendary weapons from a time of honor and
-            conquest. From battle-worn swords to intricately crafted axes, your
-            journey starts here.
-          </p>
-          <a href="#" class="btn">Explore the Armory</a>
+      <!-- <section class="hero-section">
+        <div class="container">
+          <div class="hero-section__overlay">
+            <h1>Forge Your Legacy</h1>
+            <p>
+              Arm yourself with legendary weapons from a time of honor and
+              conquest. From battle-worn swords to intricately crafted axes,
+              your journey starts here.
+            </p>
+            <a href="#" class="btn">Explore the Armory</a>
+          </div>
+        </div>
+      </section> -->
+      <section class="events">
+        <div class="container">
+          <label class="events__label">Upcoming Sale</label>
+          <h2 class="events__title">
+            "Blades of Glory – He Who Buys, Conquers!"
+          </h2>
+          <div class="events__description">
+            <span class="event__description__date">March 23rd<br />2025</span>
+            <p class="events__description__text">
+              Only fools ride to battle unarmed! Fortune smiles upon the
+              wise—arm thyself today with weapons worthy of legend at
+              coin-purse-friendly prices!
+            </p>
+          </div>
+          <div class="events__btn">
+            <a href="#" class="btn">Take Part!</a>
+          </div>
+        </div>
+      </section>
+      <section class="info-section">
+        <div class="container">
+          <div class="alternating-content">
+            <p class="alternating-content__text">
+              Welcome, traveler, to <strong>Grimnir's Forge</strong>, the finest
+              smithy this side of the kingdom. With war looming on the horizon
+              and knights and footmen alike preparing for battle, we stand ready
+              to arm thee with the strongest steel and the truest craftsmanship.
+              From tempered swords to battle-ready armor, every piece is forged
+              with care, for naught but the best shall suffice when lives hang
+              in the balance.
+            </p>
+            <div class="alternating-content__image">
+              <img
+                src="assets/uploads/forge.jpg"
+                alt="A medieval forge with a roaring fire"
+              />
+            </div>
+          </div>
+          <div class="alternating-content">
+            <p class="alternating-content__text">
+              Our blades are honed to keen edges, our breastplates hammered
+              true, and our helms sturdy enough to turn aside even the mightiest
+              of blows. Be ye a noble knight, a hardened mercenary, or a simple
+              man-at-arms, thou shalt find steel here fit for thy cause. And
+              shouldst thou seek custom work, our hands and hammers are at thy
+              service.
+            </p>
+            <div class="alternating-content__image">
+              <img
+                src="assets/uploads/armor.jpg"
+                alt="A suit of medieval armor on display"
+              />
+            </div>
+          </div>
+          <div class="alternating-content">
+            <p class="alternating-content__text">
+              Do not tarry, for war cares not for those unprepared. Step forth,
+              good warrior, and claim thy steel. May thy blade strike true and
+              thy shield never falter.
+              <em
+                >Fortune favors the bold, and the bold favor Grimnir's
+                Forge.</em
+              >
+            </p>
+            <div class="alternating-content__image">
+              <img
+                src="assets/uploads/excalibur.jpg"
+                alt="A collection of finely crafted medieval swords"
+              />
+            </div>
+          </div>
         </div>
       </section>
 
@@ -66,60 +143,104 @@
       <section class="featured-weapons">
         <div class="container">
           <h2>Featured Weapons</h2>
-          <div class="weapon-list">
-            <div class="weapon">
-              <img src="assets/uploads/Sword.jpg" alt="Sword" />
-              <h3>Excalibur</h3>
-              <p>The legendary sword of King Arthur.</p>
+          <div class="featured-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="weapon">
+                  <img src="assets/uploads/Sword.jpg" alt="Sword" />
+                  <h3>Excalibur</h3>
+                  <p>The legendary sword of King Arthur.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="weapon">
+                  <img src="assets/uploads/Axe.jpg" alt="Axe" />
+                  <h3>Viking Battle Axe</h3>
+                  <p>Wield the might of the Norse warriors.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="weapon">
+                  <img src="assets/uploads/Bow.jpg" alt="Bow" />
+                  <h3>Elven Longbow</h3>
+                  <p>Unmatched precision from the ancient forests.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="weapon">
+                  <img src="assets/uploads/Axe.jpg" alt="Axe" />
+                  <h3>Viking Battle Axe</h3>
+                  <p>Wield the might of the Norse warriors.</p>
+                </div>
+              </div>
             </div>
-            <div class="weapon">
-              <img src="assets/uploads/Axe.jpg" alt="Axe" />
-              <h3>Viking Battle Axe</h3>
-              <p>Wield the might of the Norse warriors.</p>
-            </div>
-            <div class="weapon">
-              <img src="assets/uploads/Bow.webp" alt="Bow" />
-              <h3>Elven Longbow</h3>
-              <p>Unmatched precision from the ancient forests.</p>
-            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
           </div>
         </div>
+
+        <!-- Upcoming events -->
       </section>
 
       <!-- Customer Testimonials -->
       <section class="testimonials">
         <div class="container">
           <h2>What Our Warriors Say</h2>
-          <div class="testimonial">
-            <p>
-              "These weapons are forged to perfection! The balance and
-              craftsmanship are unparalleled."
-            </p>
-            <span>- Sir Richard the Brave</span>
-          </div>
-          <div class="testimonial">
-            <p>
-              "I have conquered many battles with the sword I bought here. Truly
-              remarkable!"
-            </p>
-            <span>- Ragnar Ironfist</span>
+          <div class="testimonial__swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="testimonial">
+                  <p>
+                    "These weapons are forged to perfection! The balance and
+                    craftsmanship are unparalleled."
+                  </p>
+                  <span>- Sir Richard the Brave</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="testimonial">
+                  <p>
+                    "I have conquered many battles with the sword I bought here.
+                    Truly remarkable!"
+                  </p>
+                  <span class="testimonial-person">- Ragnar Ironfist</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="testimonial">
+                  <p>
+                    "I have conquered many battles with the sword I bought here.
+                    Truly remarkable!"" It was so good I wrote it again!"
+                  </p>
+                  <span class="testimonial-person">- Ragnar Ironfist</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="testimonial">
+                  <p>
+                    "A warrior’s sword is his soul, and ne’er have I wielded one
+                    more true than the blade I did acquire from this hall!"
+                  </p>
+                  <span class="testimonial-person"
+                    >- Ser Edric of the Silver Keep</span
+                  >
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <!-- Why Choose Us -->
-      <section class="why-choose-us">
+      <section class="newsletter-subscription">
         <div class="container">
-          <h2>Why Choose Us?</h2>
-          <ul>
-            <li>Authentic medieval craftsmanship</li>
-            <li>High-quality materials for durability</li>
-            <li>Trusted by collectors and warriors alike</li>
-          </ul>
+          <h2>Subscribe to our news letter!</h2>
+
+          <div class="subscribe-wrapper">
+            <input type="email" name="email" /><input type="submit" />
+          </div>
         </div>
       </section>
-    </main>
-    <footer>
+
       <footer class="site-footer">
         <div class="container">
           <div class="footer-column">
@@ -155,7 +276,46 @@
           <p>&copy; 2025 Koya Weapon Shop. All rights reserved.</p>
         </div>
       </footer>
-    </footer>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="assets/js/script.js"></script>
+    <script>
+      const featuredSwiper = new Swiper(".featured-swiper", {
+        speed: 400,
+        loop: true,
+        spaceBetween: 20,
+        slidesPerView: 3,
+        slidesPerGroup: 1,
+        autoplay: {
+          delay: 3000,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+          },
+          480: {
+            slidesPerView: 2,
+          },
+          768: {
+            slidesPerView: 3,
+          },
+        },
+      });
+      const swiper = new Swiper(".testimonial__swiper", {
+        direction: "vertical", // Enables bottom-to-top movement
+        speed: 400,
+        loop: true,
+        spaceBetween: 10,
+        slidesPerView: 2,
+        slidesPerGroup: 1,
+        autoplay: {
+          delay: 3000,
+        },
+      });
+    </script>
   </body>
 </html>

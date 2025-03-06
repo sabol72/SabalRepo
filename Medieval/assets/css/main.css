@@ -111,6 +111,15 @@ span {
 
 body {
   width: 100%;
+  background-color: #f2e0c8;
+}
+
+section {
+  max-width: 1370px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
 }
 
 li {
@@ -127,7 +136,6 @@ a:hover {
 }
 
 nav {
-  max-width: 1400px;
   width: 100%;
   height: auto;
   background-color: rgba(14, 13, 18, 0.8);
@@ -150,7 +158,6 @@ nav.scrolled {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 30px;
   position: relative;
 }
 
@@ -166,6 +173,12 @@ nav.scrolled {
   object-fit: contain;
 }
 
+@media (max-width: 768px) {
+  .site-logo img {
+    width: 215px;
+    height: 60px;
+  }
+}
 .nav-menu {
   display: flex;
   align-items: center;
@@ -220,10 +233,11 @@ nav.scrolled {
   }
 }
 .btn {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 400;
   line-height: 1.2;
-  padding: 12px 24px;
+  margin: 20px 0;
+  padding: 10px 20px;
   background-color: #0e0d12;
   border: 2px solid #bd8d4c;
   border-radius: 20px;
@@ -253,29 +267,6 @@ nav.scrolled {
     display: none;
   }
 }
-.hero-section {
-  max-width: 1400px;
-  width: 100%;
-  height: 100vh;
-  background-image: url(../uploads/hero-section__background.jpg);
-  background-size: cover;
-  background-position: center;
-  position: relative;
-}
-.hero-section__overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  min-height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  color: white;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
 .hero-section__overlay h1 {
   font-size: 3rem;
   font-weight: bold;
@@ -290,10 +281,47 @@ nav.scrolled {
   padding: 12px 24px;
 }
 
+.info-section {
+  max-width: 1370px;
+  width: 100%;
+  height: auto;
+  padding: 15px;
+  margin: 20px auto;
+  background: url("../uploads/dist-background-long.jpg") no-repeat center/cover;
+}
+.info-section .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.info-section .container .alternating-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.info-section .container .alternating-content__text {
+  width: 48%;
+}
+.info-section .container .alternating-content__image {
+  width: 50%;
+  height: 450px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.info-section .container .alternating-content__image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.info-section .container .alternating-content:nth-of-type(odd) {
+  flex-direction: row-reverse;
+}
+
 .featured-weapons {
   padding: 50px 0;
-  background-color: #f4f4f4;
-  border-bottom: 2px solid #bd8d4c;
+  background: url("../uploads/killer-image.png") no-repeat center/contain;
 }
 .featured-weapons .container {
   display: flex;
@@ -303,11 +331,17 @@ nav.scrolled {
 }
 .featured-weapons .weapon-list {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-around;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 20px;
+}
+.featured-weapons .featured-swiper {
+  max-width: 900px;
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
 }
 .featured-weapons .weapon {
   max-width: 300px;
@@ -315,57 +349,167 @@ nav.scrolled {
 }
 .featured-weapons .weapon img {
   width: 100%;
-  height: auto;
+  max-height: 200px;
+  height: 100%;
   border-radius: 10px;
+  object-fit: cover;
 }
 .featured-weapons .weapon h3 {
   margin-top: 10px;
   font-size: 1.5rem;
 }
 
+.events {
+  color: rgba(242, 224, 200, 0.8);
+  max-width: 1370px;
+  width: 100%;
+  padding: 15px;
+  position: relative;
+  background: linear-gradient(90deg, rgba(122, 122, 134, 0.397) 0%, rgba(34, 33, 33, 0.322) 40%, rgba(7, 7, 7, 0.842) 50%, #000000 100%), url("../uploads/Swors-event-bg.jpg") center/cover no-repeat;
+  background-size: cover;
+  height: 500px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.events .container {
+  width: 50%;
+  position: relative;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.events .container__label {
+  color: #bd8d4c;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.2;
+}
+.events__description {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10px;
+}
+.events__description_date {
+  width: 20%;
+}
+.events__description__text {
+  margin-top: 0.5rem;
+  width: 78%;
+}
+
+.newsletter-subscription {
+  max-width: 1370px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+}
+.newsletter-subscription .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 50px;
+}
+.newsletter-subscription .container .subscribe-wrapper {
+  margin: 200px auto;
+  margin-top: 0;
+  border-radius: 25px;
+  background-color: #bd8d4c;
+  max-width: 600px;
+  height: 50px;
+  padding-left: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.newsletter-subscription .container .subscribe-wrapper input[type=email] {
+  background-color: transparent;
+  color: #04070a;
+  border: none;
+  outline: none;
+  margin: 2px 0;
+  height: 80%;
+  width: 70%;
+}
+.newsletter-subscription .container .subscribe-wrapper input[type=email]:active, .newsletter-subscription .container .subscribe-wrapper input[type=email]:focus {
+  border: none;
+}
+.newsletter-subscription .container .subscribe-wrapper input[type=submit] {
+  background-color: #ffffff;
+  color: #04070a;
+  border-radius: 25px;
+  border: none;
+  height: 100%;
+  width: 30%;
+}
+
 .testimonials {
   padding: 50px 0;
-  background-color: #fff;
+  background: url("../uploads/Bacground-image-1.jpg") center/cover no-repeat;
+  color: #04070a;
 }
 .testimonials .container {
+  max-width: 1200px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   text-align: center;
 }
-.testimonials .testimonial {
-  max-width: 600px;
-  background: #ddd;
-  padding: 20px;
-  border-radius: 10px;
-  margin: 10px 0;
-}
-
-.why-choose-us {
-  padding: 50px 0;
-  background-color: #222;
-  color: white;
-}
-.why-choose-us .container {
+.testimonials .testimonial__swiper {
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
 }
-.why-choose-us ul {
-  list-style: none;
-  padding: 0;
+.testimonials .swiper-wrapper {
+  margin: 0 auto;
 }
-.why-choose-us ul li {
-  font-size: 1.2rem;
+.testimonials .swiper-wrapper .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.testimonials .swiper-wrapper .swiper-slide .testimonial {
+  max-width: 600px;
+  width: 100%;
+  background: linear-gradient(to bottom right, #bd8d4c, #f2e0c8);
+  border-radius: 10px;
+  padding: 20px;
   margin: 10px 0;
+  color: #04070a;
+  box-shadow: -5px 5px 10px rgba(14, 13, 18, 0.8);
 }
 
 .site-footer {
-  background-color: #2c2c2c;
-  color: #bd8d4c;
+  max-width: 1370px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #0e0d12;
+  color: #f2e0c8;
   padding: 40px 20px 20px;
+  position: relative; /* Make sure the ::before pseudo-element is positioned relative to this container */
+}
+.site-footer::before {
+  content: ""; /* No text content, just an image */
+  background: url("../uploads/Section-top.png") no-repeat center center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 50px; /* Adjust the height to your desired value */
+  z-index: 10; /* Ensures it is above everything else */
 }
 .site-footer .container {
   display: flex;
@@ -405,13 +549,13 @@ nav.scrolled {
 .site-footer .footer-bottom {
   text-align: center;
   padding: 10px 20px;
-  border-top: 1px solid #444;
+  border-top: 1px solid #4c5175;
   margin-top: 20px;
   font-size: 1rem;
 }
 .site-footer .footer-bottom p {
   margin: 0;
-  color: #ccc;
+  color: #4c5175;
 }
 
 /*# sourceMappingURL=main.css.map */

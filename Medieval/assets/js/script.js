@@ -3,6 +3,18 @@ document.addEventListener("DOMContentLoaded", function () {
   const navBar = document.querySelector("nav");
   const hamburger = document.querySelector(".hamburger-menu");
   const menuLinks = document.querySelectorAll(".nav-links-item");
+
+  const Swiper = new Swiper(".testimoial__swiper", {
+    speed: 400,
+    // loop: true,
+    spaceBetween: 20,
+    slidesPerView: 2,
+    slidesPerGroup: 1,
+    autoplay: {
+      delay: 3000,
+    },
+  });
+
   // Toggle Menu
   function toggleMenu() {
     menu.classList.toggle("show");
@@ -16,9 +28,11 @@ document.addEventListener("DOMContentLoaded", function () {
     document.body.classList.remove("no-scroll");
     hamburger.classList.remove("active");
   }
+
   function transparentNav() {
     navBar.classList.add("scrolled");
   }
+
   // Event Listeners
   hamburger.addEventListener("click", toggleMenu);
   menuLinks.forEach((link) => link.addEventListener("click", closeMenu));
